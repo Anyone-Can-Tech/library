@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Fix a Broken System {#sec-fix-a-broken-system}
+
+{{< credits 14-fix-a-broken-system >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Break things on purpose and bring the system back.
+
+## The big idea
+
+Troubleshooting from logs.
+
+{{< include ../../../shared/partials/support.md >}}

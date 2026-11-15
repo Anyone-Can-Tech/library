@@ -1,0 +1,82 @@
+name: Books
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "books/**"
+      - "shared/**"
+      - ".mailmap"
+      - ".github/workflows/books.yml"
+  pull_request:
+    paths:
+      - "books/**"
+      - "shared/**"
+      - ".github/workflows/books.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: books-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build ${{ matrix.book }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        book: [homelab, code, linux, network, protect]
+    defaults:
+      run:
+        working-directory: books/${{ matrix.book }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history so chapter credits include every contributor,
+          # not just whoever pushed last.
+          fetch-depth: 0
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.11.9
+
+      - name: Render HTML, PDF and EPUB
+        run: quarto render
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --offline --root-dir books/${{ matrix.book }}/_book "books/${{ matrix.book }}/_book/**/*.html"
+          fail: true
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.book }}-book
+          path: books/${{ matrix.book }}/_book
+
+  deploy-homelab:
+    # Publishes anyonecanhomelab.com through Cloudflare Pages. GitHub Pages only
+    # allows one site per repo, and this repo will host every book in the series.
+    # Skipped until the CLOUDFLARE_API_TOKEN secret is added.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: homelab-book
+          path: _book
+
+      - name: Deploy to Cloudflare Pages
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy _book --project-name=anyonecanhomelab --branch=main

@@ -1,0 +1,43 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Safe Wi-Fi at Home and Away {#sec-safe-wifi}
+
+{{< credits 08-safe-wifi >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Learn it
+
+### Goal
+
+Secure your router and stay safe on public Wi-Fi.
+
+### The big idea
+
+Router basics and public networks. Primer from Anyone Can Network.
+
+## Teach it
+
+::: {.callout-tip}
+## The one-sentence version
+To be written.
+:::
+
+### Pushback you'll hear, and how to answer it
+
+### Five-minute demo
+
+::: {.callout-note}
+## Handout
+To be written.
+:::
+
+### Family challenge
+
+{{< include ../../../shared/partials/support.md >}}

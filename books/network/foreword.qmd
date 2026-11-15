@@ -1,0 +1,8 @@
+# Foreword {.unnumbered}
+
+::: {.callout-important}
+## To be written
+The foreword is the one personal part of Anyone Can Network: why this book exists, in the voice of the series creator. The rest of the book belongs to everyone who contributes.
+:::
+
+*Michael McNees*

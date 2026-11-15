@@ -1,0 +1,43 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Your Phone Is Your Life {#sec-your-phone-is-your-life}
+
+{{< credits 06-your-phone-is-your-life >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Learn it
+
+### Goal
+
+Lock down the device that holds everything.
+
+### The big idea
+
+Screen locks, app permissions and a lost phone plan.
+
+## Teach it
+
+::: {.callout-tip}
+## The one-sentence version
+To be written.
+:::
+
+### Pushback you'll hear, and how to answer it
+
+### Five-minute demo
+
+::: {.callout-note}
+## Handout
+To be written.
+:::
+
+### Family challenge
+
+{{< include ../../../shared/partials/support.md >}}

@@ -1,0 +1,36 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Keeping It Alive {#sec-keeping-it-alive}
+
+{{< credits 10-keeping-it-alive >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Turn a fun project into something reliable.
+
+## The big idea
+
+Maintenance, backups and monitoring.
+
+## Outline
+
+- Updating the OS and containers safely
+- The 3-2-1 backup rule
+- What to back up: configs, Minecraft worlds, media metadata
+- Testing a restore, because an untested backup isn't a backup
+- Uptime Kuma for alerts when something goes down
+
+::: {.callout-warning}
+## Break it on purpose
+Delete a service's config folder and restore it from backup.
+:::
+
+{{< include ../../../shared/partials/support.md >}}

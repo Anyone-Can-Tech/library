@@ -1,0 +1,61 @@
+project:
+  type: book
+  output-dir: _book
+  pre-render: python3 ../../shared/scripts/credits.py
+
+book:
+  title: "Anyone Can Linux"
+  subtitle: "Turn an old computer into something new and learn how it all works"
+  author: "Michael McNees and contributors"
+  date: today
+  repo-url: https://github.com/Anyone-Can-Tech/library
+  repo-subdir: books/linux
+  repo-branch: main
+  repo-actions: [edit, issue]
+  downloads: [pdf, epub]
+  search: true
+  page-footer:
+    left: "Text CC BY-SA 4.0. Code MIT."
+    right:
+      - text: "Sponsor"
+        href: https://github.com/sponsors/Anyone-Can-Tech
+      - icon: github
+        href: https://github.com/Anyone-Can-Tech/library
+  chapters:
+    - index.qmd
+    - foreword.qmd
+    - chapters/01-linux-is-everywhere.qmd
+    - chapters/02-try-it-without-risk.qmd
+    - chapters/03-make-it-yours.qmd
+    - chapters/04-meet-the-terminal.qmd
+    - chapters/05-everything-is-a-file.qmd
+    - chapters/06-who-can-do-what.qmd
+    - chapters/07-getting-software.qmd
+    - chapters/08-what-is-my-computer-doing.qmd
+    - chapters/09-things-in-the-background.qmd
+    - chapters/10-text-is-everything.qmd
+    - chapters/11-teach-your-computer-chores.qmd
+    - chapters/12-remote-control.qmd
+    - chapters/13-gaming-on-linux.qmd
+    - chapters/14-fix-a-broken-system.qmd
+    - chapters/15-where-next.qmd
+  appendices:
+    - appendices/a-your-first-contribution.qmd
+
+filters:
+  - ../../shared/filters/include-code.lua
+
+shortcodes:
+  - ../../shared/shortcodes/credits.lua
+
+format:
+  html:
+    theme:
+      light: [cosmo, ../../shared/styles/series.scss]
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+  epub:
+    toc: true
+  typst:
+    section-numbering: 1.1.1

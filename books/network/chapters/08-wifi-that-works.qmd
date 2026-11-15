@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Wi-Fi That Actually Works {#sec-wifi-that-works}
+
+{{< credits 08-wifi-that-works >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Fix the dead zone in the bedroom.
+
+## The big idea
+
+Bands, channels, placement and mesh.
+
+{{< include ../../../shared/partials/support.md >}}

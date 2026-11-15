@@ -1,0 +1,43 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Spot the Scam {#sec-spot-the-scam}
+
+{{< credits 04-spot-the-scam >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Learn it
+
+### Goal
+
+Recognize phishing emails, texts, calls and AI voice clones.
+
+### The big idea
+
+Social engineering.
+
+## Teach it
+
+::: {.callout-tip}
+## The one-sentence version
+To be written.
+:::
+
+### Pushback you'll hear, and how to answer it
+
+### Five-minute demo
+
+::: {.callout-note}
+## Handout
+To be written.
+:::
+
+### Family challenge
+
+{{< include ../../../shared/partials/support.md >}}

@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Quiz Show {#sec-quiz-show}
+
+{{< credits 04-quiz-show >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Build a trivia game that keeps score.
+
+## The big idea
+
+Decisions with if and else.
+
+{{< include ../../../shared/partials/support.md >}}

@@ -1,0 +1,41 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Game Night: A Minecraft Server {#sec-minecraft-server}
+
+{{< credits 08-minecraft-server >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Run a server that friends and family can join from their own houses.
+
+## The big idea
+
+Ports, port forwarding, server resources (RAM and CPU), and hosting something other people depend on.
+
+## Outline
+
+- Java vs Bedrock, and which one your players use
+- Running the server in a container
+- Ports: why the game needs port 25565 and what that number means
+- Before you open it: whitelist on, online-mode on, server updated
+- Port forwarding hands-on: forward 25565 so friends can join
+- Verify it works from outside the house
+- RAM and CPU: watching resources while players join
+- Server settings, whitelists and ops
+- Mods and modpacks as a stretch goal
+- World backups before anything risky
+
+::: {.callout-warning}
+## Break it on purpose
+Give the server too little RAM and watch it lag, then tune it.
+:::
+
+{{< include ../../../shared/partials/support.md >}}

@@ -1,0 +1,36 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Meet the Terminal {#sec-meet-the-terminal}
+
+{{< credits 04-meet-the-terminal >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Install Linux and get comfortable typing commands.
+
+## The big idea
+
+Operating systems, files and folders, users and permissions, and logging in remotely.
+
+## Outline
+
+- Why servers run Linux
+- Installing the OS from a USB stick
+- The ten commands you actually need
+- SSH: controlling the server from your main computer
+- Updating software
+
+::: {.callout-warning}
+## Break it on purpose
+Try to delete a protected test file without sudo, then with it, and talk about why permissions exist.
+:::
+
+{{< include ../../../shared/partials/support.md >}}

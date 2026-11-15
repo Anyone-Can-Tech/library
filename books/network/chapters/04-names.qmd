@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Names {#sec-names}
+
+{{< credits 04-names >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Understand how names like example.com become addresses.
+
+## The big idea
+
+DNS. This book owns the series' DNS lessons.
+
+{{< include ../../../shared/partials/support.md >}}

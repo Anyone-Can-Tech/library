@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Ports and Protocols {#sec-ports-and-protocols}
+
+{{< credits 06-ports-and-protocols >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Learn how one device runs many conversations at once.
+
+## The big idea
+
+TCP, UDP and port numbers.
+
+{{< include ../../../shared/partials/support.md >}}

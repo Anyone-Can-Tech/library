@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Who Can Do What {#sec-who-can-do-what}
+
+{{< credits 06-who-can-do-what >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Understand why the computer sometimes says no.
+
+## The big idea
+
+Users, groups, permissions and sudo.
+
+{{< include ../../../shared/partials/support.md >}}

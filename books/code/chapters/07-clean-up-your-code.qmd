@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Clean Up Your Code {#sec-clean-up-your-code}
+
+{{< credits 07-clean-up-your-code >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Turn the tracker into small, tidy pieces.
+
+## The big idea
+
+Functions and reuse.
+
+{{< include ../../../shared/partials/support.md >}}

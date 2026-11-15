@@ -1,0 +1,35 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# A Front Door {#sec-a-front-door}
+
+{{< credits 09-a-front-door >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Make the lab feel like a product, with one place to reach everything.
+
+## The big idea
+
+URLs, hostnames and local domain names.
+
+## Outline
+
+- A dashboard like Homepage
+- Adding each service with status widgets
+- Friendly local names instead of IP addresses and port numbers
+- Reverse proxy as an optional stretch
+
+::: {.callout-warning}
+## Break it on purpose
+Change a service's port and update the dashboard to find it again.
+:::
+
+{{< include ../../../shared/partials/support.md >}}

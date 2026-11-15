@@ -1,0 +1,43 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Who's Watching? {#sec-whos-watching}
+
+{{< credits 07-whos-watching >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Learn it
+
+### Goal
+
+Take back some of your privacy.
+
+### The big idea
+
+Data brokers, tracking and oversharing.
+
+## Teach it
+
+::: {.callout-tip}
+## The one-sentence version
+To be written.
+:::
+
+### Pushback you'll hear, and how to answer it
+
+### Five-minute demo
+
+::: {.callout-note}
+## Handout
+To be written.
+:::
+
+### Family challenge
+
+{{< include ../../../shared/partials/support.md >}}

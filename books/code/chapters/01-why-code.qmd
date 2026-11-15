@@ -1,0 +1,95 @@
+---
+last-verified: "2026-11-15"
+tested-with: "No software needed"
+---
+
+# Why Code? {#sec-why-code}
+
+{{< credits 01-why-code >}}
+
+Here's a challenge. Grab a friend, a jar of peanut butter, a loaf of bread and a butter knife. Your friend's job is to make a sandwich by following your instructions exactly, and only exactly.
+
+You say, "Put the peanut butter on the bread."
+
+Your friend picks up the jar, still closed, and sets it on top of the loaf. Still in its bag.
+
+Technically, they did what you said. You try again. "Open the jar." They twist the lid the wrong way. "Turn the lid to the left." They turn the whole jar. By the time you get a sandwich, you've learned something important: the things you thought were obvious weren't obvious at all. They only lived in your head.
+
+That's programming. It has much less to do with math or typing speed than people think. Programming is the skill of saying exactly what you mean to something that will do exactly what you say.
+
+## Computers are fast and literal
+
+A computer is the most obedient helper you'll ever have. It never gets bored, never gets tired, and can repeat the same step a billion times without a single mistake. It also has zero common sense. It won't guess what you meant. It won't skip the silly step or fill in the missing one.
+
+That combination is why code is so powerful and why it can feel so frustrating at first. When your program doesn't work, the computer has done precisely what you wrote. The bug is the gap between what you wrote and what you meant, and closing that gap is the job.
+
+The good news is that this skill gets easier fast. After a few weeks you start to notice the hidden steps before the computer does.
+
+## What a program looks like
+
+A program is a list of instructions written in a language both you and the computer can read. Here's a tiny one, written in Python, the language this book uses:
+
+```python
+name = input("What's your name? ")
+print("Nice to meet you, " + name + "!")
+```
+
+Even if you've never seen code before, you can probably guess what this does. It asks for your name, remembers whatever you type, and then greets you with it. Two lines, and you've already met three big ideas you'll use for the rest of the book: asking for input, remembering information, and showing output.
+
+You don't need to run this yet. We'll set up everything you need in @sec-your-workshop.
+
+::: {.callout-note}
+## Concept box: you already use thousands of programs a day
+Your alarm clock app is a program that checks the time over and over and plays a sound when it matches. Your thermostat runs a program that compares the room temperature to a number you picked. The checkout at the grocery store adds up prices with a loop that looks a lot like code you'll write in chapter 5. Once you start seeing programs, you can't stop.
+:::
+
+## Why Python?
+
+There are hundreds of programming languages. This book uses Python for a few reasons:
+
+- **It reads almost like English.** `print("hello")` prints hello. There's very little punctuation to trip over.
+- **It's forgiving for beginners** and still powerful enough for professionals. The same language runs simple scripts and large parts of companies like Instagram and Netflix.
+- **It's everywhere.** Once you know it, you can use it for games, websites, spreadsheets, home automation, data and science.
+
+The ideas in this book work in every language. Once you understand loops and variables in Python, learning JavaScript or Swift is mostly learning new spelling.
+
+## What you'll build
+
+Each chapter adds one idea and puts it to work right away:
+
+- A **fortune teller** that answers questions
+- A **quiz show** that keeps score
+- A **number guessing game** where the computer plays fair
+- A **collection tracker** for your games, cards or books, which grows for the rest of the book until it saves its data, pulls information from the internet, lives on a web page and runs somewhere other people can use it
+
+By the last chapter you'll have a real app that you built and understand, line by line.
+
+## You will get stuck, and that's the work
+
+Every programmer, including the ones who've done it for thirty years, spends a large part of the day confused. Code doesn't work, then you figure out why, then it does. That loop is normal for everyone, at every level.
+
+This book plans for it. Chapter 9 is entirely about bugs, and most chapters include a broken version of the project for you to fix on purpose. Reading an error message calmly is one of the most valuable skills you'll learn.
+
+::: {.callout-warning}
+## Break it on purpose: the sandwich test
+Before you write any code, try the peanut butter challenge from the start of this chapter with someone at home. Write your instructions on paper first. Count how many steps you missed. That number is your bug count, and every one of those bugs was a real assumption you didn't know you were making.
+:::
+
+## What you need
+
+- A computer running Windows, macOS, Linux or ChromeOS with Linux turned on. It doesn't need to be new or fast.
+- An internet connection to download free tools.
+- About an hour per chapter, give or take. There's no rush.
+
+That's it. Everything in this book is free.
+
+::: {.callout-tip}
+## Level up
+You can now explain:
+
+- What a program is: a list of exact instructions a computer follows
+- Why computers need such precise instructions
+- What a bug is: the gap between what you wrote and what you meant
+:::
+
+{{< include ../../../shared/partials/support.md >}}

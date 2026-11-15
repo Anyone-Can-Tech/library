@@ -1,0 +1,37 @@
+# Welcome {.unnumbered}
+
+**Anyone Can Code** teaches you to program by building things. You'll start with small games, then grow one project, a tracker for your games, cards or books, into a real app that saves its data, pulls information from the internet and runs on the web.
+
+You don't need to be good at math. You don't need a fancy computer. If you can follow a recipe and you're willing to be wrong a few times, you can do this.
+
+::: {.callout-important}
+## Early draft
+This book is being written in the open, and most chapters are still outlines. Follow along, or jump in and help.
+:::
+
+## How this book works
+
+Every chapter adds one idea to your toolbox, and you use it right away in a project. The code in each chapter is tested automatically, so if the book says it works, it works.
+
+You'll see a few kinds of boxes along the way:
+
+::: {.callout-note}
+## Concept box
+Connects what you're learning to software you already use.
+:::
+
+::: {.callout-warning}
+## Break it on purpose
+A bug planted on purpose for you to find and fix. Reading error messages is half of programming.
+:::
+
+::: {.callout-tip}
+## Level up
+A checkpoint listing what you can now explain to someone else.
+:::
+
+## Free, forever
+
+The text is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and the code is [MIT](https://opensource.org/license/mit). If the book helps you, you can [sponsor the project](https://github.com/sponsors/Anyone-Can-Tech) or fix something and get your name in the book. See @sec-your-first-contribution.
+
+*Anyone Can Code is part of the Anyone Can Tech series of free technical literacy guides.*

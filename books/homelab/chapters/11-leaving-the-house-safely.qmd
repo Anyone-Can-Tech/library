@@ -1,0 +1,68 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Leaving the House Safely {#sec-leaving-the-house-safely}
+
+{{< credits 11-leaving-the-house-safely >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Use the lab from anywhere, and know exactly what you're exposing when you open a door to the internet.
+
+## The big idea
+
+Security basics: attack surface, VPNs, and the risks of open ports.
+
+## Outline
+
+- What happens when you open a port, and how to choose between port forwarding, a VPN and a tunnel
+- Port forwarding done right: risks, mitigations and verification (below)
+- Tailscale as the beginner-friendly VPN
+- Using ad blocking and the media server away from home
+- Sharing access with family
+- Password hygiene and two-factor basics
+
+## Port forwarding done right {#sec-port-forwarding}
+
+### Risks
+
+- Bots scan the entire internet nonstop, so a new open port gets found within hours
+- Unpatched software becomes an entry point into your home network
+- Weak or default passwords get brute-forced
+- Your home IP becomes public, and game servers in particular attract DDoS attempts
+- A compromised server can reach every other device in the house
+
+### Mitigations
+
+- Forward only the exact port you need, and never use the router's DMZ setting
+- Turn off UPnP so apps can't open ports on their own
+- Keep the OS and the app updated
+- Strong unique passwords, two-factor where offered, and whitelists for game servers
+- Run services in containers as a non-root user
+- A firewall on the server (ufw) that allows only the forwarded port
+- Put exposed services on a separate VLAN or guest network if your router supports it
+- Fail2ban or CrowdSec to block repeated login attempts
+- Close the port when you're not using it
+
+### Verify your security posture
+
+- Review the router's forwarding list and confirm UPnP is off
+- Scan your public IP from outside: an online port checker, or nmap from a phone on cellular data
+- Look up your IP on Shodan to see what the internet sees
+- Check what the server is listening on with `ss -tulpn`
+- Read the logs for failed logins and unknown connections
+- Repeat this checklist after every change, and on a regular schedule
+
+::: {.callout-warning}
+## Break it on purpose
+Open a port, scan it from outside, and watch bots show up in the logs. Then close it and confirm the scan comes back closed.
+:::
+
+{{< include ../../../shared/partials/support.md >}}

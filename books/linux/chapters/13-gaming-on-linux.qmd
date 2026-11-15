@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Gaming on Linux {#sec-gaming-on-linux}
+
+{{< credits 13-gaming-on-linux >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Play your Steam library and retro favorites on Linux.
+
+## The big idea
+
+Compatibility layers like Proton, and emulators.
+
+{{< include ../../../shared/partials/support.md >}}

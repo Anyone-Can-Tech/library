@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# The Collection Tracker {#sec-collection-tracker}
+
+{{< credits 06-collection-tracker >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Start the project you'll grow for the rest of the book: a tracker for games, cards or books.
+
+## The big idea
+
+Lists and dictionaries.
+
+{{< include ../../../shared/partials/support.md >}}

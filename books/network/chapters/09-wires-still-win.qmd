@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Wires Still Win {#sec-wires-still-win}
+
+{{< credits 09-wires-still-win >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Know when and how to run a cable.
+
+## The big idea
+
+Ethernet, cables, switches and real-world speeds.
+
+{{< include ../../../shared/partials/support.md >}}

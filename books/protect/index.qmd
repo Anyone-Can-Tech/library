@@ -1,0 +1,20 @@
+# Welcome {.unnumbered}
+
+**Anyone Can Protect** has two goals. The first is to help you protect yourself online. The second is to make you the person your family can count on to help them do the same.
+
+Every chapter is split in two. **Learn it** explains an idea and walks you through setting it up. **Teach it** gives you what you need to pass it on: a one-sentence version, answers to the pushback you'll hear, a quick demo, a printable handout and a small challenge to do together.
+
+::: {.callout-important}
+## Early draft
+This book is being written in the open, and most chapters are still outlines. Follow along, or jump in and help.
+:::
+
+## A promise about tone
+
+This book won't try to scare you. Scammers are professionals who do this all day, and anyone can be fooled, including security experts. If something in here has already happened to you or someone you love, that's not a failure. It's exactly why the book exists.
+
+## Free, forever
+
+The text is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), which means you can print the handouts, share them with your family, and even adapt them for your church, library or school. If the book helps you, you can [sponsor the project](https://github.com/sponsors/Anyone-Can-Tech) or fix something and get your name in the book. See @sec-your-first-contribution.
+
+*Anyone Can Protect is part of the Anyone Can Tech series of free technical literacy guides.*

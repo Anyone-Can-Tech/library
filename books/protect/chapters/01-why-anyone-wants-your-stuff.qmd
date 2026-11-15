@@ -1,0 +1,116 @@
+---
+last-verified: "2026-11-15"
+tested-with: "No software needed"
+---
+
+# Why Anyone Would Want Your Stuff {#sec-why-anyone-wants-your-stuff}
+
+{{< credits 01-why-anyone-wants-your-stuff >}}
+
+"Why would anyone hack me? I'm nobody."
+
+You've probably heard someone say that. Maybe you've said it yourself. It sounds reasonable. You're not a celebrity, a politician or a bank. Who would bother?
+
+The answer is that almost nobody is targeting you personally. That's actually the problem. Most attacks on ordinary people are automated and aimed at millions of people at once, the way a fishing boat drags a net. Criminals don't need to pick you out. They only need a small fraction of the people they reach to slip up. Being "nobody" doesn't keep you out of the net.
+
+This chapter explains what attackers want, how they go about getting it, and how to decide what's worth protecting first. That last part is called **threat modeling**, and it's simpler than it sounds.
+
+## Learn it
+
+### It's a business
+
+Forget the hooded genius from the movies. The people behind most scams and hacks are running a business, often a large and organized one, with workers, scripts, quotas and suppliers. Like any business, they want the most money for the least effort.
+
+That's useful to know, because it tells you how to stay safe. You don't have to be impossible to break into. You only have to be more trouble than the next person. A thief walking down a street of parked cars tries the doors that are unlocked.
+
+The FBI publishes a yearly report on internet crime, and the reported losses run into the billions of dollars every year. Those are only the cases people report. Many victims are too embarrassed to come forward, which is one of the reasons this book insists that being fooled is nothing to be ashamed of.
+
+### What they want
+
+Here's what's actually on the menu:
+
+**Your money.** The most direct goal. Fake invoices, fake tech support, fake "your account is locked" texts, romance scams and gift card scams all end with you sending money somewhere you can't get it back.
+
+**Your accounts.** A stolen account is valuable even if it has no money in it. A hacked email or social media account can be used to scam your friends and family, who trust messages that come from you.
+
+**Your email, especially.** Your email is the master key to your life. Almost every other account has a "forgot password" button that sends a reset link to your email. Whoever controls your email can take over nearly everything else. If you protect only one account well, make it this one.
+
+**Your identity.** Your name, birthday, address and Social Security number are enough for someone to open credit cards or take out loans in your name. You might not find out for months.
+
+**Your devices.** Sometimes attackers just want to use your computer, or lock up your files and charge you to unlock them. That last one is called ransomware, and chapter 12 shows you how backups take away its power.
+
+::: {.callout-note}
+## Concept box: why scammers love the people you love
+When an attacker takes over your account, your friends become the next targets. A message from you asking to borrow money, or sharing a "can you believe this video of you" link, works far better than one from a stranger. Protecting your own accounts protects everyone in your contacts list too.
+:::
+
+### Threat modeling in five questions
+
+Security experts use a simple set of questions to decide what to protect and how hard. The Electronic Frontier Foundation, a digital rights group, popularized a version of these for everyday people. Here they are, in plain words:
+
+1. **What do I want to protect?** Your money, your email, your photos, your kids' privacy?
+2. **Who might want it?** For most families, the answer is automated scammers, not spies.
+3. **How bad would it be if I lost it?** Losing old game save files is annoying. Losing your email or retirement account is a disaster.
+4. **How likely is it?** Phishing texts arrive every week. Targeted attacks by skilled hackers are rare for most people.
+5. **How much effort am I willing to spend?** Be honest. A plan you'll actually follow beats a perfect plan you won't.
+
+Run through those questions and a clear priority list usually falls out. For most families it looks something like this:
+
+1. Lock down **email** first, because it unlocks everything else.
+2. Then **money**: bank, retirement and payment apps.
+3. Then your **phone**, since it's where codes and resets get sent.
+4. Then **everything else**, a little at a time.
+
+The next few chapters follow that order. By the end of chapter 3, your most important accounts will be dramatically harder to break into, and it won't take a whole weekend.
+
+### What you're up against is beatable
+
+Most attacks on everyday people rely on a short list of tricks: reused passwords, missing two-factor protection, out-of-date software, and getting someone to act before they think. Every one of those has a fix, and none of the fixes require you to become a tech expert.
+
+That's the good news this whole book rests on. A few habits block the vast majority of what's aimed at you.
+
+## Teach it
+
+::: {.callout-tip}
+## The one-sentence version
+"Scammers aren't after you personally. They're casting a huge net, so all we have to do is make our family harder to catch than everyone else."
+:::
+
+### Pushback you'll hear, and how to answer it
+
+**"I have nothing worth stealing."**
+You have an email account, and it's the key to every other account you own. You also have friends and family who trust messages from you. That's valuable to a scammer even if your bank balance isn't.
+
+**"I'm not important enough to be hacked."**
+Neither is anyone else they target. It's automated. The software sending phishing texts doesn't know or care who you are.
+
+**"It won't happen to me. I'm careful."**
+Careful people get fooled every day, including security professionals. Scams are designed to catch you when you're tired, rushed or worried. Nobody is perfect, so the goal is setting things up so one mistake doesn't turn into a disaster.
+
+**"This is all too complicated."**
+We're going to do three things, one at a time, starting with the most important account. You don't have to learn everything today.
+
+### Five-minute demo: has your email been in a breach?
+
+Sit down together at a computer and visit [haveibeenpwned.com](https://haveibeenpwned.com), a free and respected service run by a security researcher. Type in an email address and press the button. It shows which known data breaches that address has appeared in.
+
+Most people who've had an email for a few years will see at least one result. That's the moment the idea lands: their information is already out there, through no fault of their own, because a company they trusted was breached. No need to panic. The fix is making sure a leaked password from one site can't unlock anything else, which is exactly what the next chapter is about.
+
+::: {.callout-note}
+## Handout: our family's three most important accounts
+*Print this and fill it in together.*
+
+| Account | What it unlocks | Strong, unique password? | Two-factor on? |
+|---|---|---|---|
+| Email: ____________ | Password resets for everything | ☐ | ☐ |
+| Bank: ____________ | Our money | ☐ | ☐ |
+| Phone carrier: ____________ | Where security codes get sent | ☐ | ☐ |
+
+**Remember:** they're casting a net, not hunting you. Stay harder to catch than average and most of it slides right past.
+:::
+
+### Family challenge
+
+Have each person in your household fill out their own copy of the handout. Don't fix anything yet. Just notice how many boxes are empty. Chapters 2 and 3 will fill them in.
+
+{{< include ../../../shared/partials/support.md >}}

@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Walls and Doors {#sec-walls-and-doors}
+
+{{< credits 12-walls-and-doors >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Control what gets in and out.
+
+## The big idea
+
+Firewalls and the risks of port forwarding.
+
+{{< include ../../../shared/partials/support.md >}}

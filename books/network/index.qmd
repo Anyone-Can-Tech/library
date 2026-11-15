@@ -1,0 +1,35 @@
+# Welcome {.unnumbered}
+
+**Anyone Can Network** is about the network you already have. The router in the closet, the Wi-Fi that drops in the bedroom, the smart plug that phones home at 3 a.m. By the end you'll know how all of it works and how to fix it when it doesn't.
+
+Your own home is the lab. No special equipment required, though you may find yourself wanting some.
+
+::: {.callout-important}
+## Early draft
+This book is being written in the open, and most chapters are still outlines. Follow along, or jump in and help.
+:::
+
+## How this book works
+
+The first chapter follows a single web request on its whole journey. Every chapter after that zooms in on one stop along the way.
+
+::: {.callout-note}
+## Concept box
+Connects what you're learning to things you see every day.
+:::
+
+::: {.callout-warning}
+## Break it on purpose
+A safe way to break part of your network and fix it. This is how you learn to troubleshoot.
+:::
+
+::: {.callout-tip}
+## Level up
+A checkpoint listing what you can now explain to someone else.
+:::
+
+## Free, forever
+
+The text is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and the code is [MIT](https://opensource.org/license/mit). If the book helps you, you can [sponsor the project](https://github.com/sponsors/Anyone-Can-Tech) or fix something and get your name in the book. See @sec-your-first-contribution.
+
+*Anyone Can Network is part of the Anyone Can Tech series of free technical literacy guides.*

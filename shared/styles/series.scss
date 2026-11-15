@@ -1,0 +1,31 @@
+/*-- scss:defaults --*/
+// Shared look and feel for every Anyone Can book.
+// Colors come from the ACT badge concept (shared/brand). The navy is the
+// series color. Each book has its own accent: Homelab teal, Code blue,
+// Network orange, Linux indigo.
+$act-navy: #121b27;
+$act-homelab-teal: #04807c;
+$primary: $act-homelab-teal;
+$headings-color: $act-navy;
+$font-size-root: 17px;
+
+/*-- scss:rules --*/
+.chapter-credits {
+  margin: 0.5rem 0 1.5rem;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid $primary;
+  background: rgba($primary, 0.06);
+  font-size: 0.95rem;
+}
+
+.credit-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.25rem;
+}
+
+.chapter-meta {
+  color: $text-muted;
+  font-size: 0.9rem;
+}

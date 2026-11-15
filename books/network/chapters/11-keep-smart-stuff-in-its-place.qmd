@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Keep the Smart Stuff in Its Place {#sec-keep-smart-stuff-in-its-place}
+
+{{< credits 11-keep-smart-stuff-in-its-place >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Separate smart devices from your laptops and phones.
+
+## The big idea
+
+Guest networks, VLANs and isolating smart devices.
+
+{{< include ../../../shared/partials/support.md >}}

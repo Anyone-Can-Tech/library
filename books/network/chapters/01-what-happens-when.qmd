@@ -1,0 +1,128 @@
+---
+last-verified: "2026-11-15"
+tested-with: "Windows 11, macOS, Linux terminals"
+---
+
+# What Happens When You Open a Website? {#sec-what-happens-when}
+
+{{< credits 01-what-happens-when >}}
+
+You pick up your phone, type `example.com` and tap Go. Less than a second later, the page appears.
+
+In that second, your request crossed your house, left through your router, traveled through equipment owned by several different companies, reached a computer that might be hundreds of miles away, and came back. Along the way it asked for directions, introduced itself, agreed on a secret code and was broken into pieces and put back together.
+
+This chapter follows that trip from start to finish. Every chapter after this one zooms in on a single stop. If you ever get lost later in the book, come back here and find where you are on the map.
+
+## Stop 1: your device needs an address
+
+Computers on a network don't find each other by name. They use numbers called **IP addresses**, which look like `203.0.113.25` or, in the newer format, something longer like `2001:db8:4f2a::25`.
+
+So the first problem is that you typed a name, and your phone needs a number. It's like knowing the name of a restaurant but not its street address.
+
+Your phone has a few ways to solve this. First it checks its own memory: has it looked up this name recently? If not, it asks a **DNS server**, the internet's phone book. Your phone sends a tiny question, "What's the address for example.com?", and gets a tiny answer with the number.
+
+Your phone usually sends that question to your router, which either knows the answer or passes the question along to a DNS server run by your internet provider or a service like Cloudflare or Google. You'll take this system apart in @sec-names.
+
+## Stop 2: leaving the house
+
+Now your phone has an address, but it doesn't have a direct line to that computer. It has a connection to your **router**, usually over Wi-Fi.
+
+Your phone wraps the request in a **packet**, a small bundle of data with a "from" address and a "to" address on the outside, like an envelope. It hands the packet to the router.
+
+Here's something odd. Your phone's address inside your house is probably something like `192.168.1.23`. Thousands of other homes use that exact same address for one of their devices. That works because those addresses are private. They only mean something inside your home.
+
+When the packet leaves, your router swaps your phone's private address for your home's single **public** address, the one your internet provider assigned you, and remembers the swap so it can send the reply back to the right device. That trick is called **NAT**, and it's covered in @sec-the-routers-secret-job.
+
+::: {.callout-note}
+## Concept box: one house, one mailbox
+Think of your home as an apartment building with a single mailbox for everyone. Mail goes out with the building's address on it. When replies come back, the front desk (your router) knows which apartment to deliver each one to. The outside world never learns your apartment number.
+:::
+
+## Stop 3: hop, hop, hop
+
+From your router, the packet travels to your internet provider. From there it's handed from one **router** to the next, each one a computer whose whole job is reading the "to" address and deciding which direction to send the packet next. None of them knows the full route. Each just knows the next good step, like a relay race where every runner only knows who to hand the baton to.
+
+A typical trip passes through somewhere between a handful and twenty or so of these hops. They're owned by your provider, by large backbone networks that connect cities and countries, and finally by whoever hosts the website. The whole thing usually takes a few hundredths of a second.
+
+## Stop 4: the handshake
+
+When the packet arrives, your phone and the server don't start talking about web pages right away. First they agree to have a conversation at all.
+
+They do this with a quick three-step exchange called the **TCP handshake**:
+
+1. Your phone: "Can we talk?"
+2. The server: "Yes, can you hear me?"
+3. Your phone: "Yes. Let's go."
+
+This sounds fussy, but it matters. The internet loses packets sometimes, and TCP is the system that notices missing pieces and asks for them again. The handshake sets that up. Ports, the numbered doors that let one computer hold many conversations at once, come in here too. Web traffic usually knocks on door 443. You'll learn why in @sec-ports-and-protocols.
+
+## Stop 5: the secret code
+
+Next comes the step behind the little lock icon in your browser. Your phone and the server agree on a secret code so that nobody along those twenty hops can read or change what you send. This is **TLS**, and it's what the S in **HTTPS** stands for (secure).
+
+The server also proves who it is by showing a certificate, a kind of digital ID signed by an organization your phone already trusts. If the ID doesn't check out, your browser shows a big warning page. That warning is worth taking seriously.
+
+## Stop 6: finally, the request
+
+Now your phone sends the actual question, written in a language called **HTTP**. It's surprisingly readable:
+
+```
+GET / HTTP/1.1
+Host: example.com
+```
+
+That means "please send me the main page of example.com." The server finds the page and sends it back, split into as many packets as it needs. Those packets make the same kind of trip in reverse, through all those routers, through your router's mailbox trick, over Wi-Fi to your phone, which puts them back in order and hands them to the browser.
+
+## Stop 7: and then it happens again, dozens of times
+
+Here's the part most people never realize. That first response is usually just the outline of the page. It mentions pictures, fonts, styles, scripts and ads, and your browser goes and fetches each one. A typical modern web page needs dozens of requests, sometimes hundreds, to multiple servers. Some of them repeat this entire journey from stop 1.
+
+All of that happens in about the time it takes to blink.
+
+## The whole trip on one page
+
+1. **Names:** your phone asks DNS to turn `example.com` into an IP address.
+2. **Leaving home:** the request goes over Wi-Fi to your router, which swaps in your public address.
+3. **Hops:** routers pass it along, one step at a time, to the server.
+4. **Handshake:** your phone and the server agree to talk.
+5. **Encryption:** they set up a secret code and the server proves who it is.
+6. **Request and response:** your phone asks for the page and the server sends it.
+7. **Repeat:** your browser fetches everything else the page needs.
+
+::: {.callout-note}
+## Try it: watch the trip yourself
+You can see parts of this journey with two commands built into almost every computer. Open a terminal (on Windows, search for **Command Prompt**. On a Mac, open **Terminal** from Applications, then Utilities).
+
+Look up a name, like your phone does at stop 1:
+
+```
+nslookup example.com
+```
+
+Watch the hops from stop 3. On Windows:
+
+```
+tracert example.com
+```
+
+On a Mac or Linux:
+
+```
+traceroute example.com
+```
+
+Each line is one router your packets passed through, with how long the round trip took. Some lines may show stars instead of times. That just means that router chose not to answer. Try it with a website hosted in another country and compare.
+:::
+
+::: {.callout-tip}
+## Level up
+You can now explain:
+
+- Why your device needs DNS before it can load a website
+- What a packet is
+- How a whole house can share one public address
+- What the lock icon in your browser means
+- Why one web page can mean dozens of trips across the internet
+:::
+
+{{< include ../../../shared/partials/support.md >}}

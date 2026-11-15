@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# What Is My Computer Doing? {#sec-what-is-my-computer-doing}
+
+{{< credits 08-what-is-my-computer-doing >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Find out what's using your memory and CPU.
+
+## The big idea
+
+Processes, memory and CPU, htop and kill.
+
+{{< include ../../../shared/partials/support.md >}}

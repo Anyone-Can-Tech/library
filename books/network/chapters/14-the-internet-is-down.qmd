@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# The Internet Is Down {#sec-the-internet-is-down}
+
+{{< credits 14-the-internet-is-down >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Find the broken layer, step by step.
+
+## The big idea
+
+A troubleshooting method you can use anywhere.
+
+{{< include ../../../shared/partials/support.md >}}

@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Things That Run in the Background {#sec-things-in-the-background}
+
+{{< credits 09-things-in-the-background >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Meet the programs that run without a window.
+
+## The big idea
+
+Services, systemd and logs with journalctl.
+
+{{< include ../../../shared/partials/support.md >}}

@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Try It Without Risk {#sec-try-it-without-risk}
+
+{{< credits 02-try-it-without-risk >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Run Linux without touching your current setup.
+
+## The big idea
+
+Distributions, and the ways to run Linux: live USB, virtual machine, WSL or a Raspberry Pi.
+
+{{< include ../../../shared/partials/support.md >}}

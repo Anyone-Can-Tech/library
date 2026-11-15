@@ -1,0 +1,36 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Containers {#sec-containers}
+
+{{< credits 05-containers >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Learn the pattern every later chapter reuses.
+
+## The big idea
+
+Containers as apps in boxes, and config files that describe how an app should run.
+
+## Outline
+
+- What Docker is and why it makes homelabs easier
+- Installing Docker
+- Your first container
+- Docker Compose: writing down how an app should run
+- The folder layout used for the rest of the book
+
+::: {.callout-warning}
+## Break it on purpose
+Stop a container, delete it, and bring it back from its Compose file.
+:::
+
+{{< include ../../../shared/partials/support.md >}}

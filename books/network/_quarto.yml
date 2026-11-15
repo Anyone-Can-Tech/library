@@ -1,0 +1,61 @@
+project:
+  type: book
+  output-dir: _book
+  pre-render: python3 ../../shared/scripts/credits.py
+
+book:
+  title: "Anyone Can Network"
+  subtitle: "Understand the network in your house, from Wi-Fi to the wider internet"
+  author: "Michael McNees and contributors"
+  date: today
+  repo-url: https://github.com/Anyone-Can-Tech/library
+  repo-subdir: books/network
+  repo-branch: main
+  repo-actions: [edit, issue]
+  downloads: [pdf, epub]
+  search: true
+  page-footer:
+    left: "Text CC BY-SA 4.0. Code MIT."
+    right:
+      - text: "Sponsor"
+        href: https://github.com/sponsors/Anyone-Can-Tech
+      - icon: github
+        href: https://github.com/Anyone-Can-Tech/library
+  chapters:
+    - index.qmd
+    - foreword.qmd
+    - chapters/01-what-happens-when.qmd
+    - chapters/02-draw-your-network.qmd
+    - chapters/03-addresses.qmd
+    - chapters/04-names.qmd
+    - chapters/05-the-routers-secret-job.qmd
+    - chapters/06-ports-and-protocols.qmd
+    - chapters/07-watch-your-network-talk.qmd
+    - chapters/08-wifi-that-works.qmd
+    - chapters/09-wires-still-win.qmd
+    - chapters/10-measure-everything.qmd
+    - chapters/11-keep-smart-stuff-in-its-place.qmd
+    - chapters/12-walls-and-doors.qmd
+    - chapters/13-tunnels-home.qmd
+    - chapters/14-the-internet-is-down.qmd
+    - chapters/15-where-next.qmd
+  appendices:
+    - appendices/a-your-first-contribution.qmd
+
+filters:
+  - ../../shared/filters/include-code.lua
+
+shortcodes:
+  - ../../shared/shortcodes/credits.lua
+
+format:
+  html:
+    theme:
+      light: [cosmo, ../../shared/styles/series.scss]
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+  epub:
+    toc: true
+  typst:
+    section-numbering: 1.1.1

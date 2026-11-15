@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Where Next {#sec-where-next}
+
+{{< credits 15-where-next >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Pick a path: homelab, programming, sysadmin or certifications.
+
+## The big idea
+
+Learning on your own.
+
+{{< include ../../../shared/partials/support.md >}}

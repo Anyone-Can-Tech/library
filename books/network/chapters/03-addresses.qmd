@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Addresses {#sec-addresses}
+
+{{< credits 03-addresses >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Learn how every device gets an address.
+
+## The big idea
+
+IP and MAC addresses, and DHCP.
+
+{{< include ../../../shared/partials/support.md >}}

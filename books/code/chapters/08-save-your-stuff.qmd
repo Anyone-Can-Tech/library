@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Save Your Stuff {#sec-save-your-stuff}
+
+{{< credits 08-save-your-stuff >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Make the tracker remember everything between runs.
+
+## The big idea
+
+Files and JSON.
+
+{{< include ../../../shared/partials/support.md >}}

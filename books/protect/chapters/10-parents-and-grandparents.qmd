@@ -1,0 +1,43 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Looking Out for Parents and Grandparents {#sec-parents-and-grandparents}
+
+{{< credits 10-parents-and-grandparents >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Learn it
+
+### Goal
+
+Protect older relatives from the scams aimed at them.
+
+### The big idea
+
+Scams that target older adults.
+
+## Teach it
+
+::: {.callout-tip}
+## The one-sentence version
+To be written.
+:::
+
+### Pushback you'll hear, and how to answer it
+
+### Five-minute demo
+
+::: {.callout-note}
+## Handout
+To be written.
+:::
+
+### Family challenge
+
+{{< include ../../../shared/partials/support.md >}}

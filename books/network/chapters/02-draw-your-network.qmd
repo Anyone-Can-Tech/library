@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Draw Your Network {#sec-draw-your-network}
+
+{{< credits 02-draw-your-network >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Map every device in your house.
+
+## The big idea
+
+Topology: routers, switches and access points.
+
+{{< include ../../../shared/partials/support.md >}}

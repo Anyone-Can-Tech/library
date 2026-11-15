@@ -1,0 +1,39 @@
+# Welcome {.unnumbered}
+
+**Anyone Can Homelab** takes you from nothing to running real services at home: network-wide ad blocking, your own media server, a Minecraft server for friends and family, and safe access to all of it from anywhere.
+
+Every project in this book teaches one core idea. Ad blocking teaches DNS. The media server teaches storage and permissions. The Minecraft server teaches ports. Remote access teaches security. By the end you'll have a working homelab and a much better sense of how the technology in your house works.
+
+::: {.callout-important}
+## Early draft
+This book is being written in the open, and most chapters are still outlines. Follow along, or jump in and help.
+:::
+
+## How this book works
+
+You'll see a few kinds of boxes throughout the book:
+
+::: {.callout-note}
+## Concept box
+Connects what you're building to technology you use every day.
+:::
+
+::: {.callout-warning}
+## Break it on purpose
+A safe way to break what you just built, then fix it. Troubleshooting is the real skill.
+:::
+
+::: {.callout-tip}
+## Level up
+A checkpoint listing what you can now explain to someone else.
+:::
+
+## Always up to date
+
+This book lives in a public git repository. The configs shown in each chapter are pulled from real files that are tested automatically, and each chapter lists when it was last checked. Spot something wrong? Use the **Report an issue** link on any page.
+
+## Free, forever
+
+The text is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and the lab code is [MIT](https://opensource.org/license/mit). If the book helps you, you can [sponsor the project](https://github.com/sponsors/Anyone-Can-Tech) or contribute a fix and get your name in the book. See @sec-your-first-contribution.
+
+*Anyone Can Homelab is the first book in the Anyone Can series of free technical literacy guides.*

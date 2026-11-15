@@ -1,0 +1,60 @@
+project:
+  type: book
+  output-dir: _book
+  pre-render: python3 ../../shared/scripts/credits.py
+
+book:
+  title: "Anyone Can Code"
+  subtitle: "Learn to program by building things you'll actually use"
+  author: "Michael McNees and contributors"
+  date: today
+  repo-url: https://github.com/Anyone-Can-Tech/library
+  repo-subdir: books/code
+  repo-branch: main
+  repo-actions: [edit, issue]
+  downloads: [pdf, epub]
+  search: true
+  page-footer:
+    left: "Text CC BY-SA 4.0. Code MIT."
+    right:
+      - text: "Sponsor"
+        href: https://github.com/sponsors/Anyone-Can-Tech
+      - icon: github
+        href: https://github.com/Anyone-Can-Tech/library
+  chapters:
+    - index.qmd
+    - foreword.qmd
+    - chapters/01-why-code.qmd
+    - chapters/02-your-workshop.qmd
+    - chapters/03-fortune-teller.qmd
+    - chapters/04-quiz-show.qmd
+    - chapters/05-guess-the-number.qmd
+    - chapters/06-collection-tracker.qmd
+    - chapters/07-clean-up-your-code.qmd
+    - chapters/08-save-your-stuff.qmd
+    - chapters/09-when-it-breaks.qmd
+    - chapters/10-talking-to-the-internet.qmd
+    - chapters/11-never-lose-your-work.qmd
+    - chapters/12-your-first-web-app.qmd
+    - chapters/13-share-it.qmd
+    - chapters/14-where-next.qmd
+  appendices:
+    - appendices/a-your-first-contribution.qmd
+
+filters:
+  - ../../shared/filters/include-code.lua
+
+shortcodes:
+  - ../../shared/shortcodes/credits.lua
+
+format:
+  html:
+    theme:
+      light: [cosmo, ../../shared/styles/series.scss]
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+  epub:
+    toc: true
+  typst:
+    section-numbering: 1.1.1

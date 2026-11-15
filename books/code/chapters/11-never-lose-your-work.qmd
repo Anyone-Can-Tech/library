@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Never Lose Your Work {#sec-never-lose-your-work}
+
+{{< credits 11-never-lose-your-work >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Save every version of your project and share it on GitHub.
+
+## The big idea
+
+Git, commits, branches and GitHub. This book owns the series' git lessons.
+
+{{< include ../../../shared/partials/support.md >}}

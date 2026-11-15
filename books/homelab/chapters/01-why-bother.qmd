@@ -1,0 +1,31 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Why Bother {#sec-why-bother}
+
+{{< credits 01-why-bother >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Get excited and lose the fear. See the finish line before the first step.
+
+## The big idea
+
+What a server actually is: a computer that is always on and does jobs for other devices.
+
+## Outline
+
+- What a homelab is, in plain words
+- What you'll have by the end: ad blocking, a media server, a Minecraft server, a dashboard, and safe remote access
+- Realistic cost: an old laptop or a cheap mini PC is enough
+- Time commitment and how to use this book
+- Mindset: breaking things is part of learning
+
+{{< include ../../../shared/partials/support.md >}}

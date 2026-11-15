@@ -1,0 +1,10 @@
+# Choose how your name appears in the chapter credits.
+#
+# The credits on each chapter's welcome page come from git history. If your
+# commits use a name or email you'd rather not show, add a line mapping it to
+# the name you want:
+#
+#   Preferred Name <preferred@example.com> Old Name <old@example.com>
+#
+# Using your GitHub noreply email (12345+username@users.noreply.github.com)
+# lets the book show your GitHub avatar next to your name.

@@ -1,0 +1,22 @@
+# Pi-hole: network-wide ad blocking.
+# Chapter 6, First Win: Ad Blocking.
+#
+# Before starting:
+#   1. Copy .env.example to .env and set a real password.
+#   2. Run: docker compose up -d
+#   3. Open http://<your-server-ip>/admin
+services:
+  pihole:
+    image: pihole/pihole:2026.11.0
+    container_name: pihole
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "80:80/tcp"
+    environment:
+      TZ: ${TZ:-America/Chicago}
+      FTLCONF_webserver_api_password: ${PIHOLE_PASSWORD:?Set PIHOLE_PASSWORD in your .env file}
+      FTLCONF_dns_listeningMode: "ALL"
+    volumes:
+      - ./etc-pihole:/etc/pihole
+    restart: unless-stopped

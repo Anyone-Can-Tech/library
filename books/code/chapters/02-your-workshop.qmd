@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Your Workshop {#sec-your-workshop}
+
+{{< credits 02-your-workshop >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Install Python and a code editor, and get comfortable with the terminal.
+
+## The big idea
+
+Tools and environments. Includes the shared terminal primer from Anyone Can Linux.
+
+{{< include ../../../shared/partials/support.md >}}

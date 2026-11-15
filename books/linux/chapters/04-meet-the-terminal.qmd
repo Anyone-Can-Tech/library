@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Meet the Terminal {#sec-meet-the-terminal}
+
+{{< credits 04-meet-the-terminal >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Type your first commands and stop fearing the black window.
+
+## The big idea
+
+Shells and commands. This book owns the series' terminal lessons.
+
+{{< include ../../../shared/partials/support.md >}}

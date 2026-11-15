@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Guess the Number {#sec-guess-the-number}
+
+{{< credits 05-guess-the-number >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Make a game the computer plays fair.
+
+## The big idea
+
+Loops and randomness.
+
+{{< include ../../../shared/partials/support.md >}}

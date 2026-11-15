@@ -1,0 +1,43 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Pi-hole 2026.11.0"
+---
+
+# First Win: Ad Blocking {#sec-ad-blocking}
+
+{{< credits 06-ad-blocking >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Run your first real service and see the result right away.
+
+## The big idea
+
+DNS in practice: every device asks for directions, and now you control the answers.
+
+## Outline
+
+- What ads and trackers are doing behind the scenes
+- Pi-hole vs AdGuard Home
+- Deploying Pi-hole with Compose
+- Pointing your router or devices at the new DNS server
+- Reading the query log: see what your smart TV is actually doing
+
+## The lab {#sec-ad-blocking-lab}
+
+Every lab in this book lives in the `labs/` folder of the repo, and the code below is pulled straight from it, so what you read is exactly what gets tested.
+
+```{.yaml include="labs/06-ad-blocking/compose.yaml" filename="labs/06-ad-blocking/compose.yaml"}
+```
+
+::: {.callout-warning}
+## Break it on purpose
+Turn the server off and notice the whole house loses the internet. Talk about single points of failure and a backup DNS server.
+:::
+
+{{< include ../../../shared/partials/support.md >}}

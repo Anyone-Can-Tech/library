@@ -1,0 +1,69 @@
+name: Labs
+
+# Every lab in the book must actually start. This validates each Compose file
+# and, when a lab has a test.sh, boots it and runs the smoke test.
+on:
+  push:
+    branches: [main]
+    paths: ["books/*/labs/**", ".github/workflows/labs.yml"]
+  pull_request:
+    paths: ["books/*/labs/**", ".github/workflows/labs.yml"]
+  schedule:
+    # Weekly, to catch upstream images that break without a version change.
+    - cron: "17 9 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    outputs:
+      labs: ${{ steps.list.outputs.labs }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        run: |
+          labs=$(find books -path '*/labs/*/compose.yaml' -printf '%h\n' | sort | jq -R . | jq -sc .)
+          echo "labs=$labs" >> "$GITHUB_OUTPUT"
+
+  test:
+    needs: find
+    if: needs.find.outputs.labs != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        lab: ${{ fromJson(needs.find.outputs.labs) }}
+    name: ${{ matrix.lab }}
+    defaults:
+      run:
+        working-directory: ${{ matrix.lab }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use example settings
+        run: if [ -f .env.example ]; then cp .env.example .env; fi
+
+      - name: Validate Compose file
+        run: docker compose -f compose.yaml config --quiet
+
+      - name: Boot lab
+        if: hashFiles(format('{0}/test.sh', matrix.lab)) != ''
+        run: |
+          files="-f compose.yaml"
+          [ -f compose.ci.yaml ] && files="$files -f compose.ci.yaml"
+          docker compose $files up -d --wait --wait-timeout 180 || docker compose $files up -d
+
+      - name: Smoke test
+        if: hashFiles(format('{0}/test.sh', matrix.lab)) != ''
+        run: ./test.sh
+
+      - name: Logs on failure
+        if: failure()
+        run: docker compose logs --no-color
+
+      - name: Tear down
+        if: always()
+        run: docker compose down -v

@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Everything Is a File {#sec-everything-is-a-file}
+
+{{< credits 05-everything-is-a-file >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Find your way around the filesystem.
+
+## The big idea
+
+The filesystem tree, paths and home folders.
+
+{{< include ../../../shared/partials/support.md >}}

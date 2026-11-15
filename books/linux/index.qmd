@@ -1,0 +1,35 @@
+# Welcome {.unnumbered}
+
+**Anyone Can Linux** starts with an old computer you were about to throw away and ends with you understanding the operating system that runs most of the world's servers, phones and gadgets.
+
+Along the way you'll install Linux, learn the terminal, fix things when they break, and even play your games on it. No prior experience needed.
+
+::: {.callout-important}
+## Early draft
+This book is being written in the open, and most chapters are still outlines. Follow along, or jump in and help.
+:::
+
+## How this book works
+
+Each chapter pulls back one layer of the system. Commands in the book are tested automatically, and each chapter lists when it was last checked.
+
+::: {.callout-note}
+## Concept box
+Connects what you're learning to devices and software you already use.
+:::
+
+::: {.callout-warning}
+## Break it on purpose
+A safe way to break something and fix it. You'll learn more from one recovery than from ten tutorials.
+:::
+
+::: {.callout-tip}
+## Level up
+A checkpoint listing what you can now explain to someone else.
+:::
+
+## Free, forever
+
+The text is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and the code is [MIT](https://opensource.org/license/mit). If the book helps you, you can [sponsor the project](https://github.com/sponsors/Anyone-Can-Tech) or fix something and get your name in the book. See @sec-your-first-contribution.
+
+*Anyone Can Linux is part of the Anyone Can Tech series of free technical literacy guides.*

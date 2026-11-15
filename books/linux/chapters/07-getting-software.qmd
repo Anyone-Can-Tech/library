@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Getting Software {#sec-getting-software}
+
+{{< credits 07-getting-software >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Install apps the Linux way.
+
+## The big idea
+
+Package managers, repositories and Flatpak.
+
+{{< include ../../../shared/partials/support.md >}}

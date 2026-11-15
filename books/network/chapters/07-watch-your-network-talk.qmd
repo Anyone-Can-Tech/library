@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Watch Your Network Talk {#sec-watch-your-network-talk}
+
+{{< credits 07-watch-your-network-talk >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Capture real traffic and read it.
+
+## The big idea
+
+Packets, with Wireshark.
+
+{{< include ../../../shared/partials/support.md >}}

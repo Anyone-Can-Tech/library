@@ -1,0 +1,6 @@
+# Changes to these files need the series creator's review before merging.
+# Replace the placeholder with a real GitHub username, then turn on
+# "Require review from Code Owners" in the branch protection rules for main.
+#
+# Forewords are the one personal part of each book.
+# books/*/foreword.qmd  @YOUR-GITHUB-USERNAME

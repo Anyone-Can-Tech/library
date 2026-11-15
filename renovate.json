@@ -1,0 +1,24 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "timezone": "America/Chicago",
+  "schedule": ["before 9am on monday"],
+  "packageRules": [
+    {
+      "description": "Lab image updates mean a chapter needs re-verifying",
+      "matchFileNames": ["books/*/labs/**"],
+      "matchManagers": ["docker-compose"],
+      "labels": ["lab-update", "needs-verification"],
+      "prBodyNotes": [
+        "This updates software used in a book lab. Before merging: run the lab, re-check the chapter's steps and screenshots, and update the chapter's last-verified date."
+      ]
+    },
+    {
+      "description": "Keep build tooling quiet: group and automerge minor workflow updates",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "groupName": "GitHub Actions",
+      "automerge": true
+    }
+  ]
+}

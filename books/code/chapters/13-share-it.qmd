@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Share It With the World {#sec-share-it}
+
+{{< credits 13-share-it >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Run your app somewhere other people can use it.
+
+## The big idea
+
+Deployment. Connects to Anyone Can Homelab.
+
+{{< include ../../../shared/partials/support.md >}}

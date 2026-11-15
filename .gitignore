@@ -1,0 +1,20 @@
+# Quarto build output
+_book/
+_freeze/
+.quarto/
+**/_credits/
+*_files/
+
+# Lab secrets and runtime data
+.env
+books/*/labs/*/etc-*/
+books/*/labs/*/data/
+
+# Python
+__pycache__/
+
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Teach Your Computer Chores {#sec-teach-your-computer-chores}
+
+{{< credits 11-teach-your-computer-chores >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Automate a boring task.
+
+## The big idea
+
+Shell scripts and scheduled tasks.
+
+{{< include ../../../shared/partials/support.md >}}

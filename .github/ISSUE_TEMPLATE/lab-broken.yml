@@ -1,0 +1,24 @@
+name: A lab doesn't work
+description: A Docker Compose lab won't start or behaves differently than the chapter says.
+labels: ["lab", "bug"]
+body:
+  - type: input
+    id: lab
+    attributes:
+      label: Lab folder
+      placeholder: "books/homelab/labs/06-ad-blocking"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Paste any error messages and the output of `docker compose logs`.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: Your setup
+      placeholder: "Mini PC, Ubuntu Server 24.04, Docker 29"

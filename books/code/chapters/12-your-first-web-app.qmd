@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Your First Web App {#sec-your-first-web-app}
+
+{{< credits 12-your-first-web-app >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Put the collection tracker on a web page.
+
+## The big idea
+
+How the web works, with Flask.
+
+{{< include ../../../shared/partials/support.md >}}

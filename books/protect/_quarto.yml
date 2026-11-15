@@ -1,0 +1,60 @@
+project:
+  type: book
+  output-dir: _book
+  pre-render: python3 ../../shared/scripts/credits.py
+
+book:
+  title: "Anyone Can Protect"
+  subtitle: "Keep your family safe online, and learn to teach them how"
+  author: "Michael McNees and contributors"
+  date: today
+  repo-url: https://github.com/Anyone-Can-Tech/library
+  repo-subdir: books/protect
+  repo-branch: main
+  repo-actions: [edit, issue]
+  downloads: [pdf, epub]
+  search: true
+  page-footer:
+    left: "Text CC BY-SA 4.0. Code MIT."
+    right:
+      - text: "Sponsor"
+        href: https://github.com/sponsors/Anyone-Can-Tech
+      - icon: github
+        href: https://github.com/Anyone-Can-Tech/library
+  chapters:
+    - index.qmd
+    - foreword.qmd
+    - chapters/01-why-anyone-wants-your-stuff.qmd
+    - chapters/02-passwords-without-the-pain.qmd
+    - chapters/03-two-locks-on-every-door.qmd
+    - chapters/04-spot-the-scam.qmd
+    - chapters/05-updates-are-armor.qmd
+    - chapters/06-your-phone-is-your-life.qmd
+    - chapters/07-whos-watching.qmd
+    - chapters/08-safe-wifi.qmd
+    - chapters/09-kids-online.qmd
+    - chapters/10-parents-and-grandparents.qmd
+    - chapters/11-guard-your-money.qmd
+    - chapters/12-backups-beat-ransomware.qmd
+    - chapters/13-when-something-goes-wrong.qmd
+    - chapters/14-your-family-safety-plan.qmd
+  appendices:
+    - appendices/a-your-first-contribution.qmd
+
+filters:
+  - ../../shared/filters/include-code.lua
+
+shortcodes:
+  - ../../shared/shortcodes/credits.lua
+
+format:
+  html:
+    theme:
+      light: [cosmo, ../../shared/styles/series.scss]
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+  epub:
+    toc: true
+  typst:
+    section-numbering: 1.1.1

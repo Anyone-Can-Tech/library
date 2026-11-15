@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# When It Breaks {#sec-when-it-breaks}
+
+{{< credits 09-when-it-breaks >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Read error messages calmly and hunt down bugs on purpose.
+
+## The big idea
+
+Debugging.
+
+{{< include ../../../shared/partials/support.md >}}

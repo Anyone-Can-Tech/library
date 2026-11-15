@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Hello, Fortune Teller {#sec-fortune-teller}
+
+{{< credits 03-fortune-teller >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Write a program that asks questions and answers back.
+
+## The big idea
+
+Variables, input and output.
+
+{{< include ../../../shared/partials/support.md >}}

@@ -1,0 +1,37 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Media Server {#sec-media-server}
+
+{{< credits 07-media-server >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Build a personal streaming service for media you already own.
+
+## The big idea
+
+Storage, folders, file permissions and transcoding.
+
+## Outline
+
+- Jellyfin and why it's the beginner pick
+- Organizing a media library so the server understands it
+- Mounting a bigger drive
+- Permissions: why the app can't see your files at first
+- Transcoding and why some videos stutter
+- Watching on TVs, phones and tablets
+
+::: {.callout-warning}
+## Break it on purpose
+Change folder permissions and watch the library disappear, then fix it.
+:::
+
+{{< include ../../../shared/partials/support.md >}}

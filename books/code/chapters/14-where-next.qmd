@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Where Next {#sec-where-next}
+
+{{< credits 14-where-next >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Pick a path: games, data, web, automation or mobile.
+
+## The big idea
+
+Learning on your own.
+
+{{< include ../../../shared/partials/support.md >}}

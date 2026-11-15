@@ -1,0 +1,7 @@
+# Your First Contribution {#sec-your-first-contribution}
+
+{{< credits a-your-first-contribution >}}
+
+{{< include ../../../shared/modules/your-first-contribution.md >}}
+
+{{< include ../../../shared/partials/support.md >}}

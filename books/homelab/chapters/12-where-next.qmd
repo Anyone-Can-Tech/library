@@ -1,0 +1,30 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Where Next {#sec-where-next}
+
+{{< credits 12-where-next >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Celebrate what you built and choose where to go from here.
+
+## The big idea
+
+Reading docs and troubleshooting on your own.
+
+## Outline
+
+- Recap: the concepts you can now explain
+- Choose your path: smart home with Home Assistant, Vaultwarden for passwords, file and photo sync, Proxmox and virtual machines, a NAS
+- Communities and where to ask for help
+- How to read docs and troubleshoot on your own
+
+{{< include ../../../shared/partials/support.md >}}

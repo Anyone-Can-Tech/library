@@ -1,0 +1,36 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Hardware {#sec-hardware}
+
+{{< credits 02-hardware >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Pick one machine and get it ready.
+
+## The big idea
+
+What the parts of a computer do (CPU, RAM, storage, network port) and why they matter for a server.
+
+## Outline
+
+- Options: old PC or laptop, mini PC, Raspberry Pi
+- The reference machine this book assumes
+- Storage basics: SSD for the system, a bigger drive for media
+- Wired vs Wi-Fi, and why the server should be wired
+- Power, noise, heat and where to put it
+
+::: {.callout-warning}
+## Break it on purpose
+Unplug the network cable and watch what stops working.
+:::
+
+{{< include ../../../shared/partials/support.md >}}

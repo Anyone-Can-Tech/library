@@ -1,0 +1,92 @@
+---
+last-verified: "2026-11-15"
+tested-with: "No software needed"
+---
+
+# Linux Is Everywhere {#sec-linux-is-everywhere}
+
+{{< credits 01-linux-is-everywhere >}}
+
+Walk around your house and count the computers. You'll probably start with the laptop and the phones. Keep going. The Wi-Fi router in the closet is a computer. So is the smart TV, the streaming stick plugged into it, the thermostat on the wall and maybe the car in the driveway.
+
+Here's the surprise: there's a very good chance most of them run Linux.
+
+If you have an Android phone, it runs on the Linux kernel. Most home routers run Linux. Many smart TVs do too. Chromebooks are built on it. The Steam Deck runs it. And when you open a website, stream a show or send a message, the computers on the other end are almost certainly running Linux. It powers most of the servers on the internet and every one of the world's 500 fastest supercomputers.
+
+You've been using Linux for years. This book is about getting to know it.
+
+## What an operating system does
+
+Every computer needs a manager. When you tap an app, something has to load it into memory, give it a turn on the processor, let it draw on the screen and stop it from messing with other apps. When you save a photo, something has to decide where on the storage chip it goes and remember how to find it later.
+
+That manager is the **operating system**. Windows, macOS, iOS, Android and Linux are all operating systems. They do the same basic jobs in different ways.
+
+At the center of every operating system is the **kernel**, the part that talks directly to the hardware. Linux, strictly speaking, is a kernel. Android, ChromeOS and the desktop versions of Linux you'll use in this book all build on that same kernel and add their own apps, settings and look on top.
+
+::: {.callout-note}
+## Concept box: why your router doesn't have a start menu
+Your router runs Linux, but you'll never see a desktop on it. It doesn't need one. It has no screen, so the manufacturer included only the parts it needs: networking, a tiny web page for settings, and not much else. Linux can be trimmed down to fit a smart plug or built up to run a supercomputer. That flexibility is a big reason it ended up everywhere.
+:::
+
+## A very short history
+
+In 1991, a Finnish student named Linus Torvalds posted a message online saying he was working on a free operating system kernel as a hobby. He said it wouldn't be anything big or professional.
+
+He was wrong. Programmers around the world started sending improvements. Because the code was free to read, change and share, companies, universities and hobbyists all built on it at the same time. Today thousands of people contribute to the Linux kernel, many of them paid by companies that rely on it.
+
+That idea, software anyone can read, change and share, is called **open source**. It's also how this book works: the text and code are free, and anyone can suggest a fix.
+
+## Distributions: one kernel, many flavors
+
+Since anyone can build on Linux, lots of groups have. Each packages the kernel with a set of apps, a look and a way of installing software. These packages are called **distributions**, or **distros** for short.
+
+A few you'll hear about:
+
+- **Linux Mint** is designed to feel familiar to people coming from Windows.
+- **Ubuntu** is one of the most popular choices for both desktops and servers.
+- **Fedora** gets new features early.
+- **Debian** is known for being steady and reliable, and Ubuntu and Mint are built on top of it.
+
+Picking a distro feels like a big decision, but it matters less than you'd think. They share the same foundations, and almost everything you learn in one works in the others. Chapter 2 helps you pick one and try it without any risk.
+
+## Why learn Linux at all?
+
+Plenty of people use computers happily without ever touching Linux directly. So why bother?
+
+**It gives old computers a second life.** A laptop that crawls on its current system can feel fast again with a lightweight Linux distro. Chapter 3 walks through exactly that.
+
+**It shows you how computers really work.** Windows and macOS hide a lot behind friendly screens. Linux lets you look under the hood whenever you want. Settings are often plain text files you can read. The logs that explain what went wrong are right there. Once you understand how Linux does something, you understand how computers do it.
+
+**It's the language of servers.** If you ever want to run a home server, build a website, learn programming or work in tech, you'll meet Linux. The other books in this series, especially *Anyone Can Homelab* and *Anyone Can Code*, lean on what you'll learn here.
+
+**It's yours.** Linux is free. It doesn't show you ads in the start menu or nag you to sign in to an account. You decide what's installed and when it updates.
+
+## What you'll do in this book
+
+You'll start gently. In chapter 2 you'll try Linux without changing anything on your current computer. In chapter 3 you'll install it on an old machine. From there, each chapter pulls back one layer: the terminal, files, permissions, installing software, background services, automation and remote control.
+
+There's a chapter on gaming, because yes, you can play your Steam library on Linux. And near the end you'll break your system on purpose and bring it back, which will do more for your confidence than anything else in the book.
+
+::: {.callout-note}
+## Try it: the Linux scavenger hunt
+Before chapter 2, go find the Linux in your house. Look in the settings or "About" screens of your devices:
+
+- On an Android phone, look in **Settings**, then **About phone**, for a **Kernel version**.
+- On a Chromebook, open **About ChromeOS**.
+- Log in to your router's admin page (the address is often printed on a sticker on the router) and look for a firmware or system page. Many mention Linux.
+- Smart TVs and streaming devices sometimes list open source licenses under **Legal** or **About**. If you see "Linux kernel" in the list, you found one.
+
+Count how many you find. Most people are surprised.
+:::
+
+::: {.callout-tip}
+## Level up
+You can now explain:
+
+- What an operating system does, and what a kernel is
+- Why Linux shows up in so many devices
+- What a distribution is, and why the choice matters less than it seems
+- What open source means
+:::
+
+{{< include ../../../shared/partials/support.md >}}

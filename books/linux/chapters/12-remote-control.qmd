@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Remote Control {#sec-remote-control}
+
+{{< credits 12-remote-control >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Control one computer from another.
+
+## The big idea
+
+SSH and keys.
+
+{{< include ../../../shared/partials/support.md >}}

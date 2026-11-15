@@ -1,0 +1,23 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Make It Yours {#sec-make-it-yours}
+
+{{< credits 03-make-it-yours >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Install Linux on an old laptop.
+
+## The big idea
+
+Partitions, bootloaders and drivers.
+
+{{< include ../../../shared/partials/support.md >}}

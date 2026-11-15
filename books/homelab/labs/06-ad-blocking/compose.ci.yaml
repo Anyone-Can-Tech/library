@@ -1,0 +1,9 @@
+# CI-only override. GitHub's Ubuntu runners already use port 53 for their own
+# DNS resolver, so the test run moves Pi-hole to high ports.
+# Readers on Ubuntu may hit the same conflict. Chapter 6 should cover it.
+services:
+  pihole:
+    ports: !override
+      - "5353:53/tcp"
+      - "5353:53/udp"
+      - "8080:80/tcp"

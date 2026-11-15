@@ -1,0 +1,43 @@
+---
+last-verified: "Not yet verified"
+tested-with: "Not yet tested"
+---
+
+# Networking Without Fear {#sec-networking-without-fear}
+
+{{< credits 03-networking-without-fear >}}
+
+::: {.callout-important}
+## Draft
+This chapter is an outline. Want to help write it? Start with @sec-your-first-contribution.
+:::
+
+## Goal
+
+Understand your home network before installing anything.
+
+## The big idea
+
+IP addresses, the router, DHCP, DNS, NAT and ports.
+
+## Outline
+
+- Your router is the post office for your house
+- IP addresses as street addresses
+- DHCP hands out addresses, and why the server needs a fixed one
+- DNS as the phone book of the internet
+- Finding devices on your network
+- Public vs private IPs and NAT: why the outside world can't reach your devices by default
+- Ports as apartment numbers on the same street address
+
+::: {.callout-note}
+## Concept box: Why hotel Wi-Fi pops up a login page
+Hotel networks intercept your first web request and redirect it to a sign-in page. Once you understand DNS and routers, that trick stops being mysterious.
+:::
+
+::: {.callout-warning}
+## Break it on purpose
+Give a device the wrong DNS server and see which sites fail.
+:::
+
+{{< include ../../../shared/partials/support.md >}}

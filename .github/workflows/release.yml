@@ -1,0 +1,40 @@
+name: Release a book
+
+# Tag a release with the book's folder name, for example:
+#   git tag homelab-v0.1.0 && git push origin homelab-v0.1.0
+on:
+  push:
+    tags: ["*-v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Work out which book
+        id: book
+        run: echo "slug=${GITHUB_REF_NAME%%-v*}" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.11.9
+
+      - name: Render PDF and EPUB
+        working-directory: books/${{ steps.book.outputs.slug }}
+        run: |
+          quarto render --to typst
+          quarto render --to epub
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ github.ref_name }}
+          body_path: books/${{ steps.book.outputs.slug }}/CHANGELOG.md
+          files: |
+            books/${{ steps.book.outputs.slug }}/_book/*.pdf
+            books/${{ steps.book.outputs.slug }}/_book/*.epub
