@@ -6,4 +6,4 @@ This repository uses two licenses.
 
 **Code** (everything under `books/*/labs/`, `shared/`, and `.github/`) is licensed under the [MIT License](LICENSES/MIT.txt), so you can copy the lab configs into your own setup without restrictions.
 
-If you're unsure which license covers a file, ask in an issue.
+If you're unsure which license covers a file, ask in your pull request.

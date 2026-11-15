@@ -30,7 +30,7 @@ A checkpoint listing what you can now explain to someone else.
 
 ## Always up to date
 
-This book lives in a public git repository. The configs shown in each chapter are pulled from real files that are tested automatically, and each chapter lists when it was last checked. Spot something wrong? Use the **Report an issue** link on any page.
+This book lives in a public git repository. The configs shown in each chapter are pulled from real files that are tested automatically, and each chapter lists when it was last checked. Spot something wrong? Use the **Edit this page** link on any page to fix it.
 
 ## Free, forever
 

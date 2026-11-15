@@ -11,7 +11,7 @@ book:
   repo-url: https://github.com/Anyone-Can-Tech/library
   repo-subdir: books/code
   repo-branch: main
-  repo-actions: [edit, issue]
+  repo-actions: [edit]
   downloads: [pdf, epub]
   search: true
   page-footer:

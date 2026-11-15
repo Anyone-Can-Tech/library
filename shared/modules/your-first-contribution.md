@@ -19,7 +19,7 @@ Version control and open source collaboration: git, GitHub, forks, branches and 
 - The easy path: the **Edit this page** link on every page of this site
 - The real path: fork, clone, branch, edit, commit, push
 - Opening a pull request and what happens during review
-- Finding a `good first issue`
+- Finding something to fix: typos, outdated versions, a lab that no longer works
 - Seeing your name on the chapter welcome page after the next build
 
 ## How chapter credits work

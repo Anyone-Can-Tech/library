@@ -2,16 +2,39 @@
 
 Thanks for helping. These books exist to make technology less intimidating, and that applies to contributing too. If this is your first pull request ever, you're in the right place.
 
+Every change comes in as a pull request from a fork. Issues are turned off, so if you spot a problem, the way to report it is to fix it. Not sure how? Open a draft pull request with what you have and say what's wrong. We'll help from there.
+
 ## The quick way: edit in your browser
 
-Every page on the book's website has an **Edit this page** link. It opens the file on GitHub, where you can make a change and propose it in a few clicks. Great for typos and small fixes.
+Every page on the book's website has an **Edit this page** link. It opens the file on GitHub, which forks the repo and opens a pull request for you in a few clicks. Great for typos and small fixes.
 
-## The full way: work locally
+## The full way: fork, branch, pull request
 
-1. Fork this repo and clone your fork.
-2. Create a branch: `git switch -c fix-chapter-6-typo`
+1. Fork this repo on GitHub and clone your fork.
+2. Create a branch for your change: `git switch -c fix-chapter-6-typo`. One topic per branch, and never work on `main`.
 3. Preview the book while you edit: `cd books/homelab && quarto preview`
-4. Commit with a short, clear message, then push and open a pull request.
+4. Commit with a short, clear message and push the branch to your fork.
+5. Open a pull request from your branch to `main` on this repo and fill in the template.
+6. Answer review comments by pushing more commits to the same branch.
+
+If `main` moves while you work, sync your fork's `main` on GitHub and rebase your branch onto it.
+
+## Using AI tools
+
+AI assistants and agents are welcome here. Use whatever helps you write, edit or test. The rule is simple: **the human who opens the pull request is responsible for it**, no matter how it was made.
+
+That means before you open a pull request you have:
+
+- Read every line of the change and can explain why it's there.
+- Checked every fact, command, version number and link yourself. AI tools make up plausible commands and options. In a book for beginners, one wrong command can break a reader's computer.
+- Run any lab you changed, on a real machine.
+- Made sure it follows the [writing style](#writing-style) below and sounds like the rest of the book.
+- Stayed around to answer review comments yourself. An agent can push fixes, but a person has to be accountable for them.
+
+We will close pull requests that are low effort, unhelpful or make the books worse. That includes bulk rewrites nobody asked for, generic filler, made-up facts and changes the author clearly didn't review. How it was made doesn't matter. What it does to the book does.
+
+- **First time:** we close the pull request and leave a warning explaining why.
+- **After that:** we block the account from contributing.
 
 ## How you get credited
 
